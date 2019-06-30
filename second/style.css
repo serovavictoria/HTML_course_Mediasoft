@@ -1,0 +1,49 @@
+body {
+    padding: 50px;
+}
+
+.table1 {
+    display: inline-block;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif
+}
+
+.table2 {
+    background: linear-gradient(317deg, #B573A0 0%, #708FD2 100%);
+    color: white;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    width: 100px; height: 25px;
+    position: relative;
+    text-align: center;
+}
+
+thead {
+    background-color: #5e699c;
+}
+
+tr:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+td:hover::after,
+td:focus::after{
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: 0;
+}
+
+td:hover::after{
+    background-color: white;
+}
